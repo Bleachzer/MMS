@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>sign in</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="signin.js"></script>
+	<script src="jquery.backstretch.min.js"></script>  
+	<script type="text/javascript">  
+		jQuery(document).ready(function() {
+        	$.backstretch(["timg.jpeg"]); 
+        });
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div id="signin">
+			<h1>Player Sign in</h1>
+			<form action="signin.php" method="post" ><br/>
+				<label for="username">Username: </label>
+				<input type="text" name="username" class="username" placeholder="username" required minlength="5" maxlength="40">
+				<span id="usernamemess" class="usernamemess"></span>
+				
+				<br>
+				<label for="name">name: </label>
+				<input type="text" name="name" class="name" placeholder="name"  required  maxlength="60">
+
+				<label for="email">Email address: </label>
+				<input type="Email" name="Email" class="Email" placeholder="yourname@gamil.com" required maxlength="100">
+
+				<label for="phone">Phone number: </label>
+				<input type="text" name="Phone" class="Phone" placeholder="178000000"  required minlength="6" maxlength="50">
+
+				<label for="password">Password: </label>
+				<input type="password" name="password1" id="password1" placeholder="password"  required onkeyup="checkPass(); return false;" minlength="5" maxlength="100">
+
+				<label for="confirm">Confirm password: </label>
+				<input type="password" name="password2" id="password2" placeholder="enter again"  required onkeyup="checkPass(); return false;" >
+				<span id="confirmMessage" class="confirmMessage"></span>
+				<button class="submit" name="submit" id="signin" type="submit">sign in!</button>
+				<br>
+				<button class="submit" id="back" name="back" type="button" style="background-color:orange">return back</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
+<link rel="stylesheet" href="style.css">

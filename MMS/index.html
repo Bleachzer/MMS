@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<title>football's home</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="jquery.js"></script>  
+		<script src="jquery.backstretch.min.js"></script>  
+		<script type="text/javascript"> 
+		jQuery(document).ready(function() {
+        	$.backstretch(["timg.jpeg"]); 
+        }); 
+		</script>  
+		</head>
+	<body>
+		<div class="container" style="height: 700px">
+			<div id="login">
+				<h1>Player Login</h1>
+				<form action="indexx.php" method="post">
+					<input type="text" name="username" class="name" placeholder="username"  required oninvalid="setCustomValidity('can not be empty!');" oninput="setCustomValidity('');"><br/>
+					<input type="password" name="password" class="password" placeholder="password" required oninvalid="setCustomValidity('can not be empty!');" oninput="setCustomValidity('');"><br/>
+					<button class="submit" name="submit" type="submit">Login!</button>
+				</form>
+				<div id="register">
+					<p>Do not have an account?</p>
+					<p>Click <a href="signin.html">here</a> to creat a new account</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
